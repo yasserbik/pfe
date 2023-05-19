@@ -1,0 +1,21 @@
+server:
+  port: 8087
+  servlet:
+    context-path: /pfe
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.j dbc.Driver
+    url: jdbc:mysql://localhost:3307/pfe
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+logging:
+  level:
+    org.springframework.web: DEBUG
+    ma.geo.local: DEBUG
+    org.hibernate: ERROR
